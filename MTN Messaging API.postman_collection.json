@@ -1,0 +1,3126 @@
+{
+	"info": {
+		"_postman_id": "2365d71b-997f-4530-ae86-0bc4e2fba31c",
+		"name": "MTN Messaging API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send SMS",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-Key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+				},
+				"url": {
+					"raw": "https://staging.api.mtn.com/v1/messages/sms",
+					"protocol": "https",
+					"host": [
+						"staging",
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"v1",
+						"messages",
+						"sms"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Bad request",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Invalid access token. Please try with a valid token",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "The service requested is currently unavailable",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Service Unavailable",
+					"code": 503,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "The requested resource does not support the supplied verb",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Authorization credentials passed and accepted but account does forbidden to send SMSes\n",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Created",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"messages\":{\"to\":\"string\",\"deliveryStatus\":\"string\",\"messageId\":\"string\",\"smsStatusURL\":\"string\"}}"
+				},
+				{
+					"name": "API does not support the requested content type",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Unsupported Media Type",
+					"code": 415,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "The HTTP method being used has not yet been implemented for\nthe requested resource\n",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"body\": \"Please reply with received\", \r\n  \"clientId\": \"MADAPI NIGERIA TEST\",\r\n  \"from\": \"38838\",\r\n  \"notificationUrl\":\"https://enz7zpvcb933d.x.pipedream.net/\",\r\n  \"to\": [\"2348032000098\",\"2347066134733\",\"2348037731178\",\"2347032543094\",\"2348032003591\",\"2348036816527\",\"2347039374996\"]\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							]
+						}
+					},
+					"status": "Not Implemented",
+					"code": 501,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				}
+			]
+		},
+		{
+			"name": "Receive SMS Responses",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-Key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+					"protocol": "https",
+					"host": [
+						"staging-nigeria",
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"v1",
+						"messages",
+						"sms"
+					],
+					"query": [
+						{
+							"key": "batchSize",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "The service requested is currently unavailable",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Service Unavailable",
+					"code": 503,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "API does not support the requested content type",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Unsupported Media Type",
+					"code": 415,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Authorization credentials passed and accepted but account not allowed to send SMS\n",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Bad Request",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "OK",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"batchSize\":1,\"messages\":{\"status\":\"string\",\"to\":\"string\",\"from\":\"string\",\"message\":\"string\",\"messageId\":\"string\",\"sentTimestamp\":\"string\"}}"
+				},
+				{
+					"name": "Invalid access token. Please try with a valid token",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Internal server error",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Not Implemeted",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Not Implemented",
+					"code": 501,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "The requested resource does not support the supplied verb",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/messages/sms?batchSize=5",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms"
+							],
+							"query": [
+								{
+									"key": "batchSize",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				}
+			]
+		},
+		{
+			"name": "Delivery status",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"v1",
+						"messages",
+						"sms",
+						"{messageId}",
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "API does not support the requested content type",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "Unsupported Media Type",
+					"code": 415,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "The service requested is currently unavailable",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "Service Unavailable",
+					"code": 503,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Bad Request",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "An internal error occurred when processing the request",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "An internal error occurred when processing the request",
+					"code": "default",
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Authorization credentials passed and accepted but account does\nnot have permission to make the request",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Not implemented",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "Not Implemented",
+					"code": 501,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "OK",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "null"
+				},
+				{
+					"name": "Internal server error",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Invalid access token. Please try with a valid token",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "The requested resource does not support the supplied verb",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms/{messageId}/status",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms",
+								"{messageId}",
+								"status"
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				}
+			]
+		},
+		{
+			"name": "Register listener",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-Key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"accessCode\": \"38838\",\r\n  \"callbackUrl\": \"https://enam1z1pzlzer.x.pipedream.net/\",\r\n  \"clientId\": \"SN SMS Test\"\r\n}"
+				},
+				"url": {
+					"raw": "https://staging.api.mtn.com/v1/messages/sms-listeners",
+					"protocol": "https",
+					"host": [
+						"staging",
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"v1",
+						"messages",
+						"sms-listeners"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Conflict",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accessCode\": \"38838\",\r\n  \"callbackUrl\": \"https://enam1z1pzlzer.x.pipedream.net/\",\r\n  \"clientId\": \"SN SMS Test\"\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms-listeners",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners"
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Unauthorized",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accessCode\": \"38838\",\r\n  \"callbackUrl\": \"https://enam1z1pzlzer.x.pipedream.net/\",\r\n  \"clientId\": \"SN SMS Test\"\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms-listeners",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Forbidden",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accessCode\": \"38838\",\r\n  \"callbackUrl\": \"https://enam1z1pzlzer.x.pipedream.net/\",\r\n  \"clientId\": \"SN SMS Test\"\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms-listeners",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Bad Request",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accessCode\": \"38838\",\r\n  \"callbackUrl\": \"https://enam1z1pzlzer.x.pipedream.net/\",\r\n  \"clientId\": \"SN SMS Test\"\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms-listeners",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Method Not allowed",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accessCode\": \"38838\",\r\n  \"callbackUrl\": \"https://enam1z1pzlzer.x.pipedream.net/\",\r\n  \"clientId\": \"SN SMS Test\"\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms-listeners",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners"
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accessCode\": \"38838\",\r\n  \"callbackUrl\": \"https://enam1z1pzlzer.x.pipedream.net/\",\r\n  \"clientId\": \"SN SMS Test\"\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms-listeners",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accessCode\": \"38838\",\r\n  \"callbackUrl\": \"https://enam1z1pzlzer.x.pipedream.net/\",\r\n  \"clientId\": \"SN SMS Test\"\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms-listeners",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Created",
+					"originalRequest": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "UldV1eSYYczvPVEAwnjIBeeMtnl11mXc",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"accessCode\": \"38838\",\r\n  \"callbackUrl\": \"https://enam1z1pzlzer.x.pipedream.net/\",\r\n  \"clientId\": \"SN SMS Test\"\r\n}"
+						},
+						"url": {
+							"raw": "https://staging.api.mtn.com/v1/messages/sms-listeners",
+							"protocol": "https",
+							"host": [
+								"staging",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"accessCode\":\"string\",\"callbackUrl\":\"string\",\"status\":\"string\",\"message\":\"string\"}"
+				}
+			]
+		},
+		{
+			"name": "Remove callback listener",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.mtn.com/v1/messages/sms-listeners/{accessCode}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"v1",
+						"messages",
+						"sms-listeners",
+						"{accessCode}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Callback deleted",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms-listeners/{accessCode}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners",
+								"{accessCode}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				},
+				{
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms-listeners/{accessCode}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners",
+								"{accessCode}"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Conflict",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms-listeners/{accessCode}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners",
+								"{accessCode}"
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms-listeners/{accessCode}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners",
+								"{accessCode}"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Method Not allowed",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms-listeners/{accessCode}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners",
+								"{accessCode}"
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Forbidden",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms-listeners/{accessCode}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners",
+								"{accessCode}"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Unauthorized",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms-listeners/{accessCode}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners",
+								"{accessCode}"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				},
+				{
+					"name": "Bad Request",
+					"originalRequest": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.mtn.com/v1/messages/sms-listeners/{accessCode}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"messages",
+								"sms-listeners",
+								"{accessCode}"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "Sending as JSON",
+							"type": "string"
+						}
+					],
+					"cookie": [],
+					"body": "{\"code\":1,\"reason\":1,\"message\":\"string\"}"
+				}
+			]
+		}
+	]
+}

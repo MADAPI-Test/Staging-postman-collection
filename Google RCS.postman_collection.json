@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "21db276a-0606-4ed8-862e-3d4007e27192",
+		"name": "Google RCS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OAuth2.0 API - Client Credentials",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "M6wTG6QI3pbyW6DE",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "oUqVdM4ssk6aToKnmk12FhDlVUdbxRBq",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://staging.api.mtn.com/auth/v1/token",
+					"protocol": "https",
+					"host": [
+						"staging",
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"auth",
+						"v1",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mobile Networks Services API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{AccessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://staging.api.mtn.com/mobilenetworkservices/v2/plmns/62130/serviceConfig?imsi=621300258056917&serviceName=RCS",
+					"protocol": "https",
+					"host": [
+						"staging",
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"mobilenetworkservices",
+						"v2",
+						"plmns",
+						"62130",
+						"serviceConfig"
+					],
+					"query": [
+						{
+							"key": "imsi",
+							"value": "621300258056917"
+						},
+						{
+							"key": "serviceName",
+							"value": "RCS"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

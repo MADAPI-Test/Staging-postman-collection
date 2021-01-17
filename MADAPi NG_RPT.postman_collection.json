@@ -1,0 +1,629 @@
+{
+	"info": {
+		"_postman_id": "3f559eaa-1279-4d06-b318-9b80bf46cfab",
+		"name": "MADAPi NG_RPT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RPT",
+			"item": [
+				{
+					"name": "GrossConnection",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"/*",
+									"pm.test(\"Response time is less than 2s\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+									"});",
+									"",
+									"pm.test(\"Customer id is not null\", function () {",
+									"    pm.expect(jsonData.customerId).to.not.eql(null); ",
+									"});",
+									"*/",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "qmArjvN9iD0EERTxaP21AFjxTLxqsA1u",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/analytics/rpt/DROIDCOMBO-AG38-ZAM-GUS-1110904/productivity?reportType=gross-connection",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"analytics",
+								"rpt",
+								"DROIDCOMBO-AG38-ZAM-GUS-1110904",
+								"productivity"
+							],
+							"query": [
+								{
+									"key": "reportType",
+									"value": "gross-connection"
+								},
+								{
+									"key": "startDate",
+									"value": "20200113",
+									"disabled": true
+								},
+								{
+									"key": "endDate",
+									"value": "20200113",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MFS-transaction",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"/*",
+									"pm.test(\"Response time is less than 2s\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+									"});",
+									"",
+									"pm.test(\"Customer id is not null\", function () {",
+									"    pm.expect(jsonData.customerId).to.not.eql(null); ",
+									"});",
+									"*/",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "qmArjvN9iD0EERTxaP21AFjxTLxqsA1u",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/analytics/rpt/2348105854522/productivity?reportType=mfs-transactions&startDate=20200105&endDate=20200105",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"analytics",
+								"rpt",
+								"2348105854522",
+								"productivity"
+							],
+							"query": [
+								{
+									"key": "reportType",
+									"value": "mfs-transactions"
+								},
+								{
+									"key": "startDate",
+									"value": "20200105"
+								},
+								{
+									"key": "endDate",
+									"value": "20200105"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SIM-Swap",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"/*",
+									"pm.test(\"Response time is less than 2s\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+									"});",
+									"",
+									"pm.test(\"Customer id is not null\", function () {",
+									"    pm.expect(jsonData.customerId).to.not.eql(null); ",
+									"});",
+									"*/",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "qmArjvN9iD0EERTxaP21AFjxTLxqsA1u",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/analytics/rpt/yaab_almoham/productivity?reportType=sim-swap",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"analytics",
+								"rpt",
+								"yaab_almoham",
+								"productivity"
+							],
+							"query": [
+								{
+									"key": "reportType",
+									"value": "sim-swap"
+								},
+								{
+									"key": "startDate",
+									"value": "20200101",
+									"disabled": true
+								},
+								{
+									"key": "endDate",
+									"value": "20200113",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4G-Upgrade",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"/*",
+									"pm.test(\"Response time is less than 2s\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+									"});",
+									"",
+									"pm.test(\"Customer id is not null\", function () {",
+									"    pm.expect(jsonData.customerId).to.not.eql(null); ",
+									"});",
+									"*/",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "qmArjvN9iD0EERTxaP21AFjxTLxqsA1u",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/analytics/rpt/sra_mohabd/productivity?reportType=four-g-upgrade",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"analytics",
+								"rpt",
+								"sra_mohabd",
+								"productivity"
+							],
+							"query": [
+								{
+									"key": "reportType",
+									"value": "four-g-upgrade"
+								},
+								{
+									"key": "startDate",
+									"value": "20200108",
+									"disabled": true
+								},
+								{
+									"key": "endDate",
+									"value": "20200108",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "D2R-Transactions",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"/*",
+									"pm.test(\"Response time is less than 2s\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+									"});",
+									"",
+									"pm.test(\"Customer id is not null\", function () {",
+									"    pm.expect(jsonData.customerId).to.not.eql(null); ",
+									"});",
+									"*/",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "qmArjvN9iD0EERTxaP21AFjxTLxqsA1u",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/analytics/rpt/2348068146301/productivity?reportType=d2r-transactions&startDate=20200107&endDate=20200107",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"analytics",
+								"rpt",
+								"2348068146301",
+								"productivity"
+							],
+							"query": [
+								{
+									"key": "reportType",
+									"value": "d2r-transactions"
+								},
+								{
+									"key": "startDate",
+									"value": "20200107"
+								},
+								{
+									"key": "endDate",
+									"value": "20200107"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DATA-Vend",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"/*",
+									"pm.test(\"Response time is less than 2s\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+									"});",
+									"",
+									"pm.test(\"Customer id is not null\", function () {",
+									"    pm.expect(jsonData.customerId).to.not.eql(null); ",
+									"});",
+									"*/",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "qmArjvN9iD0EERTxaP21AFjxTLxqsA1u",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/analytics/rpt/2347060423333/productivity?reportType=data-vend&startDate=20200104&endDate=20200104",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"analytics",
+								"rpt",
+								"2347060423333",
+								"productivity"
+							],
+							"query": [
+								{
+									"key": "reportType",
+									"value": "data-vend"
+								},
+								{
+									"key": "startDate",
+									"value": "20200104"
+								},
+								{
+									"key": "endDate",
+									"value": "20200104"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VTU-Transactions",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"/*",
+									"pm.test(\"Response time is less than 2s\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+									"});",
+									"",
+									"pm.test(\"Customer id is not null\", function () {",
+									"    pm.expect(jsonData.customerId).to.not.eql(null); ",
+									"});",
+									"*/",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "qmArjvN9iD0EERTxaP21AFjxTLxqsA1u",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-Key",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v1/analytics/rpt/2347065982054/productivity?reportType=vtu-transactions&startDate=20200105&endDate=20200105",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v1",
+								"analytics",
+								"rpt",
+								"2347065982054",
+								"productivity"
+							],
+							"query": [
+								{
+									"key": "reportType",
+									"value": "vtu-transactions"
+								},
+								{
+									"key": "startDate",
+									"value": "20200105"
+								},
+								{
+									"key": "endDate",
+									"value": "20200105"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

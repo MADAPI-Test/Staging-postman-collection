@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "c7a96c09-f8be-410a-bed1-b61f877b4445",
+		"name": "Subscription API (Chargeless)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Subscription v2 - Charge-less",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true,
+					"content-type": true,
+					"user-agent": true
+				},
+				"tlsPreferServerCiphers": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "5wtsaaIo9gX5NVXIP2nAc7E4imQHlUqP"
+					},
+					{
+						"key": "transactionId",
+						"type": "text",
+						"value": "234872789"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-authorization-claims",
+						"value": "eyJhdWQiOiJtaWNyb2dhdGV3YXkiLCJuYmYiOjE1OTIwNTkwOTQsImRldmVsb3Blcl9lbWFpbCI6Im1vc2VzLmJldHQuZXh0ZXJuYWxAYXRvcy5uZXQiLCJpc3MiOiJodHRwczovL21vc2VzYmV0dGV4dGVybmFsLWV2YWwtdGVzdC5hcGlnZWUubmV0L2VkZ2VtaWNyby1hdXRoL3ZlcmlmeUFwaUtleSIsImFwcF9jdXN0b21fYXR0cmlidXRlcyI6eyJEaXNwbGF5TmFtZSI6ImhlbGxvd29ybGQiLCJOb3RlcyI6IiAiLCJhbmltYWwiOiJlbGVwaGFudCIsImxvY2F0aW9uIjoibmdhcmEiLCJza2lwQ2hhcmdpbmciOnRydWV9LCJqdGkiOiIwYjFkZTg5ZS03YzliLTRmYWYtYmFiNi1lYmVmOWI3MGY5YjUifQ==",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "2349062059569",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amountCharged\": 500,\r\n  \"beneficiaryId\": \"2349062059866\",\r\n  \"nodeId\":\"SMARTAPP\",\r\n  \"subscriptionId\": \"RACT_NG_Data_258\",\r\n  \"subscriptionPaymentSource\":\"AIRTIME\",\r\n  \"subscriptionProviderId\": \"CIS\",\r\n  \"subscriptionType\": \"ADHOC\",\r\n  \"transactionId\": \"234872789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staging-nigeria.api.mtn.com/v2/customers/2349062059866/subscriptions?rules=false&transactionId=234872789",
+					"protocol": "https",
+					"host": [
+						"staging-nigeria",
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"v2",
+						"customers",
+						"2349062059866",
+						"subscriptions"
+					],
+					"query": [
+						{
+							"key": "rules",
+							"value": "false"
+						},
+						{
+							"key": "transactionId",
+							"value": "234872789"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

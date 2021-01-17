@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "67dc2ca9-c790-457b-a564-8ee0ee6c2514",
+		"name": "Subscription API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Subscriptions v2",
+			"item": [
+				{
+					"name": "Subscription v2 - Chargeable",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"pm.test(\"Response time is less than 2000ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true,
+							"accept-encoding": true,
+							"connection": true,
+							"content-type": true,
+							"user-agent": true
+						},
+						"tlsPreferServerCiphers": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": "5wtsaaIo9gX5NVXIP2nAc7E4imQHlUqP"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"beneficiaryId\": \"2349062059367\",\r\n  \"nodeId\":\"SMARTAPP\",\r\n  \"subscriptionId\": \"RACT_NG_Data_191\",\r\n  \"subscriptionPaymentSource\":\"AIRTIME\",\r\n  \"subscriptionProviderId\": \"CIS\",\r\n  \"subscriptionType\": \"ADHOC\", \r\n  \"transactionId\": \"3576745485\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v2/customers/2349062059367/subscriptions?rules=false&transactionId=234872789",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v2",
+								"customers",
+								"2349062059367",
+								"subscriptions"
+							],
+							"query": [
+								{
+									"key": "rules",
+									"value": "false"
+								},
+								{
+									"key": "transactionId",
+									"value": "234872789"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscription v2 - History",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true,
+							"accept-encoding": true,
+							"connection": true,
+							"content-type": true,
+							"user-agent": true
+						},
+						"tlsPreferServerCiphers": true,
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": "5wtsaaIo9gX5NVXIP2nAc7E4imQHlUqP"
+							},
+							{
+								"key": "transactionId",
+								"type": "text",
+								"value": "234872944"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"amountCharged\": 500,\r\n  \"autoRenew\": false,\r\n  \"beneficiaryId\": \"2349062058583\",\r\n  \"email\": \"string\",\r\n  \"endDate\":\"2020-06-10T13:51:27.665Z\",\r\n  \"nodeId\":\"GOOGLE\",\r\n  \"registrationChannel\": \"string\",\r\n  \"sendSMSNotification\": false,\r\n  \"skipCharging\": false,\r\n  \"startDate\":\"2020-06-10T13:51:27.665Z\",\r\n  \"statusCode\": \"000\",\r\n  \"statusDescription\": \"string\",\r\n  \"subscriptionDescription\": \"Get 112.5MB Daily Plan for N100. Valid for 24 hrs.\",\r\n  \"subscriptionId\": \"RACT_NG_Data_193\",\r\n  \"subscriptionLength\": \"string\",\r\n  \"subscriptionName\":\"112.5MB Daily Plan\",\r\n  \"subscriptionPaymentSource\":\"AIRTIME\",\r\n  \"subscriptionProviderId\": \"CIS\",\r\n  \"subscriptionStatus\": \"Active\",\r\n  \"subscriptionType\": \"ADHOC\",\r\n  \"transactionId\": \"234872789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v2/customers/2349062059367/subscriptions/history?startDate=2020-10-01&endDate=2020-10-15&pageNo=1&limit=2&clientTransactionId=234872780&nodeId=SMARTAPP",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v2",
+								"customers",
+								"2349062059367",
+								"subscriptions",
+								"history"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2020-10-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2020-10-15"
+								},
+								{
+									"key": "pageNo",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "clientTransactionId",
+									"value": "234872780"
+								},
+								{
+									"key": "nodeId",
+									"value": "SMARTAPP"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscription v2 - Active",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true,
+							"accept-encoding": true,
+							"connection": true,
+							"content-type": true,
+							"user-agent": true
+						},
+						"tlsPreferServerCiphers": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": "5wtsaaIo9gX5NVXIP2nAc7E4imQHlUqP"
+							},
+							{
+								"key": "transactionId",
+								"type": "text",
+								"value": "664784984646"
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v2/customers/2349062059276/subscriptions?nodeId=SMARTAPP",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v2",
+								"customers",
+								"2349062059276",
+								"subscriptions"
+							],
+							"query": [
+								{
+									"key": "nodeId",
+									"value": "SMARTAPP"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}

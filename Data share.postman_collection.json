@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "abf1e8aa-f821-4d5d-a1ff-11f00ea6d07f",
+		"name": "Data share",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "Kpxg6P6umi8NTQS5hqOBYbIBpGuJNSXA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"receiverMsisdn\": \"2349062059367\",\r\n\"requestedDataAmount\": \"0\"\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://staging-nigeria.api.mtn.com/v1/datashare/customers/2349062059276/datashare?productCode=ME2U_NG_Data2Share_605",
+					"protocol": "https",
+					"host": [
+						"staging-nigeria",
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"v1",
+						"datashare",
+						"customers",
+						"2349062059276",
+						"datashare"
+					],
+					"query": [
+						{
+							"key": "productCode",
+							"value": "ME2U_NG_Data2Share_605"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

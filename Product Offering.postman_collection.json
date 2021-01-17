@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "8b5971af-435a-496d-b674-4c7e293f78ea",
+		"name": "Product Offering",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products v3",
+			"item": [
+				{
+					"name": "Products v3 - Get Catalogue",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept-encoding": true,
+							"connection": true,
+							"content-type": true
+						},
+						"tlsPreferServerCiphers": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": "5wtsaaIo9gX5NVXIP2nAc7E4imQHlUqP"
+							},
+							{
+								"key": "transactionId",
+								"type": "text",
+								"value": "1234567890"
+							},
+							{
+								"key": "Credentials",
+								"value": "ZnVsZmlsbG1lbnRhYmlsaXR5OmZ1bGZpbGxtZW50QGFiaWxpdHk=",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v3/products?nodeId=GOOGLE",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v3",
+								"products"
+							],
+							"query": [
+								{
+									"key": "nodeId",
+									"value": "GOOGLE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products v3 - Get Catalogue for MSISDN",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept-encoding": true,
+							"connection": true,
+							"content-type": true
+						},
+						"tlsPreferServerCiphers": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": "5wtsaaIo9gX5NVXIP2nAc7E4imQHlUqP"
+							},
+							{
+								"key": "transactionId",
+								"type": "text",
+								"value": "1234567890"
+							},
+							{
+								"key": "Credentials",
+								"type": "text",
+								"value": "ZnVsZmlsbG1lbnRhYmlsaXR5OmZ1bGZpbGxtZW50QGFiaWxpdHk="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v3/products/2349062059569?nodeId=SMARTWEB",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v3",
+								"products",
+								"2349062059569"
+							],
+							"query": [
+								{
+									"key": "nodeId",
+									"value": "SMARTWEB"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products v3 - Eligibility Check",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true,
+							"connection": true,
+							"content-type": true
+						},
+						"tlsPreferServerCiphers": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": "5wtsaaIo9gX5NVXIP2nAc7E4imQHlUqP"
+							},
+							{
+								"key": "Credentials",
+								"type": "text",
+								"value": "ZnVsZmlsbG1lbnRhYmlsaXR5OmZ1bGZpbGxtZW50QGFiaWxpdHk="
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v3/products/2349062059294/eligibility/ECHK_NG_Data_231?nodeId=SMARTAPP",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v3",
+								"products",
+								"2349062059294",
+								"eligibility",
+								"ECHK_NG_Data_231"
+							],
+							"query": [
+								{
+									"key": "nodeId",
+									"value": "SMARTAPP"
+								},
+								{
+									"key": "2349062059569",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Products v3 - Product Price",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept-encoding": true,
+							"connection": true,
+							"content-type": true
+						},
+						"tlsPreferServerCiphers": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": "{{apiKey}}"
+							},
+							{
+								"key": "Credentials",
+								"type": "text",
+								"value": "ZnVsZmlsbG1lbnRhYmlsaXR5OmZ1bGZpbGxtZW50QGFiaWxpdHk="
+							}
+						],
+						"url": {
+							"raw": "https://staging-nigeria.api.mtn.com/v3/products/2349062059255/RACT_NG_Data_123?nodeId=GOOGLE",
+							"protocol": "https",
+							"host": [
+								"staging-nigeria",
+								"api",
+								"mtn",
+								"com"
+							],
+							"path": [
+								"v3",
+								"products",
+								"2349062059255",
+								"RACT_NG_Data_123"
+							],
+							"query": [
+								{
+									"key": "nodeId",
+									"value": "GOOGLE"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

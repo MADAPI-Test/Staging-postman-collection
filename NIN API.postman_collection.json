@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "b9d07c4c-6946-4776-b15f-5e72001aa34f",
+		"name": "NIN API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NIN API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"channel\": \"USSD\",\r\n  \"type\": \"NIN\",\r\n  \"data\": \"46732101483\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nin-aggregator-madapi-preprod.apps.staging01.nga.api.mtn.com/customers/2348074097716/process",
+					"protocol": "https",
+					"host": [
+						"nin-aggregator-madapi-preprod",
+						"apps",
+						"staging01",
+						"nga",
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"customers",
+						"2348074097716",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NIN_Doc No.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"transactionId\": \"10101010101010\",\r\n\"timestamp\": \"2020-05-07 01:10 AM\",\r\n\"channel\": \"USSD\",\r\n\"data\": \"6743567898\",\r\n\"type\": \"DOCUMENT_ID\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nin-aggregator-madapi-preprod.apps.staging01.nga.api.mtn.com/customers/2348074097716/process",
+					"protocol": "https",
+					"host": [
+						"nin-aggregator-madapi-preprod",
+						"apps",
+						"staging01",
+						"nga",
+						"api",
+						"mtn",
+						"com"
+					],
+					"path": [
+						"customers",
+						"2348074097716",
+						"process"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
