@@ -26,7 +26,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://staging-nigeria.api.mtn.com/v1/datashare/customers/2349062059276/datashare?productCode=ME2U_NG_Data2Share_605",
+					"raw": "http://staging-nigeria.api.mtn.com/v1/datashare/customers/2349062059276/datashare?productCode=ME2U_NG_Data2Share_605",
 					"protocol": "https",
 					"host": [
 						"staging-nigeria",
